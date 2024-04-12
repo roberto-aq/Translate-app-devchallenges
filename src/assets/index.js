@@ -1,6 +1,6 @@
 import Logo from './logo.svg';
 import BackgroundImage from './hero_img.jpg';
-import ExpandArrow from './expand_down.svg';
+import ExpandArrow from './Expand_down.svg';
 import ReactSvg from './react.svg';
 import HorizontalTop from './Horizontal_top_left_main.svg';
 import SortAlfa from './sort_alfa.svg';
