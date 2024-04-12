@@ -15,7 +15,7 @@ export const InputCard = ({
 }) => {
 	return (
 		<div
-			className={`${className} rounded-xl h-[350px] p-7 flex flex-col gap-5 border border-graySecondary`}
+			className={`${className} rounded-3xl h-[350px] p-7 flex flex-col gap-5 border border-graySecondary`}
 		>
 			<HeaderCard
 				langActive={langActive}
@@ -31,7 +31,7 @@ export const InputCard = ({
 				<div className='relative h-full'>
 					<textarea
 						placeholder='Translate here'
-						className='w-full bg-transparent border-none focus:outline-none resize-none text-white font-bold h-full'
+						className='w-full bg-transparent border-none focus:outline-none resize-none text-white font-bold h-full '
 						value={textToTranslate}
 						onChange={onChange}
 					></textarea>
@@ -46,7 +46,7 @@ export const InputCard = ({
 						type='submit'
 						className={`${
 							isLoading ? 'bg-blueSecondary' : 'bg-bluePrimary'
-						} px-5 py-2 rounded-lg flex items-center gap-2 text-sm font-bold`}
+						} px-5 py-2 rounded-lg border border-blueSecondary mt-1 flex items-center gap-2 text-sm font-bold`}
 					>
 						<img src={SortAlfa} alt='svg Translate' />
 						{isLoading ? 'Translating...' : 'Translate'}

@@ -12,7 +12,7 @@ export const OutputCard = ({
 }) => {
 	return (
 		<div
-			className={`${className} rounded-xl h-[350px] p-7 flex flex-col gap-5 border border-graySecondary`}
+			className={`${className} rounded-3xl h-[350px] p-7 flex flex-col gap-5 border border-graySecondary`}
 		>
 			<HeaderCard
 				langActive={langActive}

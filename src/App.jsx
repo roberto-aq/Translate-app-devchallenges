@@ -6,8 +6,10 @@ import { translate } from './services/action';
 function App() {
 	const [langActive, setLangActive] = useState('en');
 	const [targetLang, setTargetLang] = useState('fr');
-	const [textToTranslate, setTextToTranslate] = useState('');
-	const [translatedText, setTranslatedText] = useState('');
+	const [textToTranslate, setTextToTranslate] = useState(
+		'Hello, how are you?'
+	);
+	const [translatedText, setTranslatedText] = useState('Bonjour, comment vas-tu?');
 	const [isLoading, setIsLoading] = useState(false);
 
 	const onTextareaChange = e => {
@@ -27,6 +29,10 @@ function App() {
 		const { responseData } = await translate(
 			textToTranslate,
 			`${langActive}|${targetLang}`
+		);
+		console.log(
+			responseData,
+			`---${textToTranslate}---${langActive}|${targetLang}`
 		);
 
 		setIsLoading(false);
