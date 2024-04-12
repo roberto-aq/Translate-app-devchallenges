@@ -37,7 +37,7 @@ Una serie de ejemplos paso a paso que le indican cómo poner en funcionamiento u
 
 1. Clonar el repositorio:
 ```bash
-git clone [tu-enlace-del-repo]
+git clone [[enlace-repo]](https://github.com/roberto-aq/Translate-app-devchallenges)
 ```
 2. Instalar las dependencias 
 ```bash
